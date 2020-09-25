@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        W3.CSS Screen Builder for simple web apps
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-beautify/1.13.0/beautify-html.min.js"></script>
+    <!-- This script is the file with the user code -->
+    <script defer src="main.js"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- See http://www.w3school.com/w3css/ for more info on how to use w3.css -->
+
+
+    <link rel="stylesheet" href="main.css">
+    <!-- main.css overwrites and extends the CSS provided by w3.css -->
+</head>
+
+<body>
+    <h1>Drag and Drop Screen Builder</h1>
+    <div class="w3-container" id="content">
+        <div class="w3-cell-row">
+            <div class="w3-cell w3-border" id="panel_cell">
+                <header class="w3-container">
+                    <h2>Element Panel</h2>
+                </header>
+                <div class="w3-container" id="panel">
+
+                </div>
+            </div>
+            <div class="w3-cell w3-border" id="canvas_cell">
+                <header class="w3-container">
+                    <h2>Canvas</h2>
+                    Drag and drop from the element panel onto this canvas.<br>
+                    You can edit the words simply by clicking!
+                </header>
+                <div class="w3-container" id="canvas_content">
+
+                </div>
+                <div class="w3-border-top" id="canvas_setings">
+                    <div " id=" settings">
+
+                        <header class="w3-container">
+                            <h2>Additional Settings</h2>
+                        </header>
+                        <div class="w3-container">
+                            <p>
+                                <label for="colorInput" class="w3-text-blue">Color:</label>
+                                <select class="w3-input" id="colorInput">
+                                    <option value="blue" class="w3-blue">blue</option>
+                                    <option value="red" class="w3-red">red</option>
+                                    <option value="orange" class="w3-orange">orange</option>
+                                    <option value="light-green" class="w3-light-green">light-green</option>
+                                    <option value="teal" class="w3-teal">teal</option>
+                                    <option value="yellow" class="w3-yellow">yellow</option>
+                                    <option value="indigo" class="w3-indigo">indigo</option>
+                                    <option value="amber" class="w3-amber">amber</option>
+                                    <option value="blue-gray" class="w3-blue-gray">blue-gray</option>
+                                    <option value="pale-red" class="w3-pale-red">pale-red</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <label for="screenIdInput" class="w3-text-blue">Screen ID (no spaces, start with a
+                                    letter)</label>
+                                <input class="w3-input" type="text" value="generated_screen" id="screenIdInput">
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="w3-cell w3-border" id="code">
+                <header class="w3-container">
+                    <h2>Code</h2>
+                    <div class="w3-container">
+                        <pre class="w3-code" id="html_code">
+                        </pre>
+                </header>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>

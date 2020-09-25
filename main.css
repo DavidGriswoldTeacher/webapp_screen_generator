@@ -1,0 +1,80 @@
+.screen {
+    max-width: 50rem;
+    border: 1px black;
+    margin: 2rem auto;
+}
+
+.draggable_parent {
+    border: 1px black dashed;
+    margin: .5em 0;
+    padding-left: .5em;
+}
+
+.draggable_parent:hover {
+    box-shadow: 0 0 1em gray;
+}
+
+#canvas_cell {
+    min-width: 500px;
+    max-width: 50%;
+}
+
+.drag_receiver {
+    position: absolute;
+    height: 1em;
+    width: 100%;
+    z-index: 1;
+    margin-top: -1em;
+    /* background-color: #ffaa9969; */
+    /* display: none; */
+}
+
+.drag_receiver:first-of-type {
+    margin-top: 0;
+}
+
+.w3-container {
+    position: relative;
+}
+
+#generated_screen_content {
+    min-height: 1em;
+}
+
+.drag_receiver_highlighted {
+    height: 3em;
+    border: 0.5px dashed gray;
+    position: relative;
+}
+
+#code {
+    min-width: 30%;
+    max-width: 700px;
+}
+
+pre.w3-code {
+    white-space: pre-wrap;
+}
+
+#canvas p {
+    margin: 1em 0;
+}
+
+#canvas p:hover {
+    position: relative;
+    box-shadow: 0 0 1em gray;
+    padding: .5em .5em .5em .5em;
+    margin: -.55em -.5em -.5em -.5em;
+}
+
+#canvas p:hover:first-of-type {
+    margin-top: .5em;
+}
+
+#canvas p:hover:last-of-type {
+    margin-bottom: .5em;
+}
+
+input.broken {
+    background-color: #fa9d9db4;
+}
